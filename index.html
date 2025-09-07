@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Karma Karar · OriyanApps</title>
+  <meta name="description" content="Karma Karar: Love · Mood · Motto. Pastel temalı, keyifli karar çarkı uygulaması." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Karma Karar · OriyanApps" />
+  <meta property="og:description" content="Love · Mood · Motto — keyifli karar çarkı." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://orianapps.github.io/" />
+  <meta property="og:image" content="https://orianapps.github.io/logo.png" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg1:#f7efe9; --bg2:#f0f4ff; --ink:#1e1f24;
+      --accent:#8b5cf6; --accent2:#ec4899;
+      --card:#ffffff; --muted:#6b7280;
+      --ring: rgba(139,92,246,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(1200px 800px at 10% -10%, var(--bg2), transparent 60%),
+        radial-gradient(1200px 800px at 110% 110%, #ffeaf3, transparent 60%),
+        linear-gradient(180deg, var(--bg1), #fff);
+      display:grid; place-items:center; padding:32px;
+    }
+    .wrap{max-width:880px; width:100%}
+    .card{
+      background:var(--card); border-radius:24px; padding:28px;
+      box-shadow:0 12px 40px rgba(0,0,0,.06), inset 0 1px 0 rgba(255,255,255,.7);
+      border:1px solid rgba(0,0,0,.06);
+    }
+    .brand{display:flex; gap:18px; align-items:center; margin-bottom:8px}
+    .logo{
+      width:64px; height:64px; border-radius:18px; object-fit:cover; flex:none;
+      border:1px solid rgba(0,0,0,.07); box-shadow:0 6px 16px rgba(139,92,246,.15);
+    }
+    h1{font-size:28px; line-height:1.2; margin:0}
+    .tag{display:inline-flex; gap:8px; flex-wrap:wrap; margin:10px 0 18px}
+    .chip{
+      padding:6px 10px; border-radius:999px; font-size:12px; font-weight:600;
+      background:linear-gradient(90deg, rgba(139,92,246,.12), rgba(236,72,153,.12));
+      border:1px solid rgba(0,0,0,.06);
+    }
+    p{margin:0 0 18px; color:var(--muted)}
+    .actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px}
+    .btn{
+      appearance:none; border:0; cursor:pointer; text-decoration:none; user-select:none;
+      padding:12px 16px; border-radius:14px; font-weight:700; font-size:15px;
+      display:inline-flex; align-items:center; gap:10px;
+      background:linear-gradient(90deg, var(--accent), var(--accent2));
+      color:#fff; box-shadow:0 10px 24px var(--ring);
+      transition:transform .1s ease, box-shadow .2s ease, opacity .2s;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn.secondary{
+      background:#fff; color:var(--ink); border:1px solid rgba(0,0,0,.08);
+      box-shadow:0 6px 16px rgba(0,0,0,.06);
+    }
+    .grid{
+      display:grid; gap:16px; grid-template-columns:repeat(3,1fr);
+      margin-top:22px
+    }
+    .shot{
+      border-radius:16px; overflow:hidden; border:1px solid rgba(0,0,0,.08);
+      aspect-ratio:9/16; background:#fafafa; display:block; width:100%; object-fit:cover;
+    }
+    footer{margin-top:16px; text-align:center; color:var(--muted); font-size:12px}
+    @media (max-width:800px){
+      .grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:560px){
+      .brand{flex-direction:row}
+      h1{font-size:24px}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" aria-labelledby="title">
+      <div class="brand">
+        <!-- İsteğe bağlı: repo'ya logo.png yükle; yoksa img gizlenir -->
+        <img class="logo" src="logo.png" alt="Karma Karar logosu" onerror="this.style.display='none'">
+        <div>
+          <h1 id="title">Karma Karar</h1>
+          <div class="tag">
+            <span class="chip">LOVE</span>
+            <span class="chip">MOOD</span>
+            <span class="chip">MOTTO</span>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        Pastel temalı, huzurlu arayüzüyle <strong>karar çarkı</strong>. 
+        Tek dokunuşla ilham verici öneriler, küçük oyunlaştırma ve günlük motivasyon.
+      </p>
+
+      <div class="actions">
+        <!-- ⬇⬇ 1) BURAYI KENDİ PAKETİNLE DOLDUR -->
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.oriyan.karmakarar" target="_blank" rel="noopener">
+          Google Play'de indir
+        </a>
+        <!-- ⬇⬇ 2) İstersen gizlilik metninin linkini koy -->
+        <a class="btn secondary" href="https://sites.google.com/view/karmakararapp/ana-sayfa" target="_blank" rel="noopener">Gizlilik Politikası</a>
+        <a class="btn secondary" href="mailto:karmakararorianapps@gmail.com?subject=Karma%20Karar%20Destek&body=Merhaba%20OriyanApps%2C"
+           title="
+karmakararorianapps@gmail.com">Destek</a>
+      </div>
+
+      <!-- Basit ekran görüntüleri alanı (görselleri repo'ya atıp isimleri değiştir) -->
+      <div class="grid" aria-label="Ekran görüntüleri">
+        <img class="shot" src="ss1.jpg" alt="Karma Karar ekran görüntüsü 1" onerror="this.style.display='none'">
+        <img class="shot" src="ss2.jpg" alt="Karma Karar ekran görüntüsü 2" onerror="this.style.display='none'">
+        <img class="shot" src="ss3.jpg" alt="Karma Karar ekran görüntüsü 3" onerror="this.style.display='none'">
+      </div>
+    </section>
+    <footer>© <span id="y"></span> OriyanApps · GitHub Pages</footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
